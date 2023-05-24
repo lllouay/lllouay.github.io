@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="mystyle2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body class="main-bg">
+    
+<div class="form" style="align-items: center;"onsubmit="alertName()">
+    <div class="form-text">
+<h1>Book Your Table Now</h1>
+    </div>
+    <div class="main-form">
+        <form action="index.php" method="get">
+<div>
+    <span>Name:</span>
+    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+</div>
+<div>
+    <span>Email Address:</span>
+    <input type="text" name="name" id="name" placeholder="Write your email here"required>
+</div>
+<div>
+    <span>Number of People:</span>
+    <select name="people" id="people" required>
+<option value=""><--people---></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+    </select>
+</div>
+<div>
+    <span>Time:</span>
+    <input type="text" name="name" id="time" placeholder="time" required>
+</div>
+<div>
+    <span>Date:</span>
+    <input type="date" name="date" id="date" placeholder="date" required>
+</div>
+<div>
+    <span>Phone Number</span>
+    <input type="number" name="number" id="number" placeholder="Write your phone number">
+</div>
+<div>
+    <input type="submit"  value="SUBMIT" id="submit">
+</div>
+        </form>
+    </div>
+</div>
+<script>
+function alertName(){
+            
+    let firstName = document.forms[0].elements[0].value;
+  
+    window.alert(firstName+",You Booked a table sucessfully,Hope You enjoy");
+    
+    }
+    </script>
+
+</body>
+</html>

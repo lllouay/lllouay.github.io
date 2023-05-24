@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(252,222,195)">
+    <div class="form-box">
+        <form class="form" onsubmit="alertName()" >
+            <span class="title">Sign up</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <input type="text" class="input" placeholder="Full Name" required>
+                    <input type="email" class="input" placeholder="Email" required>
+                    <input type="password" class="input" placeholder="Password" required>
+            </div>
+            <button>Sign up</button>
+        </form>
+        <script>
+
+            "use strict";
+            
+            function alertName(){
+            
+            let firstName = document.forms[0].elements[0].value;
+          
+            window.alert(firstName+",Your Sign up is succcesfull,Thankyou");
+            
+            }
+            
+            </script>
+        <div class="form-section">
+            <p style="font-size: 20px; ">Have an account? <a href="" >Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
